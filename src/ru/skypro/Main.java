@@ -23,14 +23,7 @@ public class Main {
         System.out.println("Total weight of boxers = " + weightOfAllBoxers + "kg");
         System.out.println ("The difference in weight is " + weightDifference + "kg");
 
-
-
-
-
-
-
-
-
+        double first = 78.2;
 
     }
 }
