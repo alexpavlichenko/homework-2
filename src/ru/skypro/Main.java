@@ -11,7 +11,7 @@ public class Main {
         float goalsScoredPerGameOnAverage = 95.5f;
         double goalsConcededPerGameOnAverage = 46.5;
         char g = 33;
-        boolean muIsChampion = mu > 1;
+        boolean muIsChampion = mu>1;
         System.out.println (g);
         System.out.println ("Manchester United is a Champion? " +  muIsChampion);
 
@@ -25,25 +25,41 @@ public class Main {
 
         // Homework 3
         byte bananas = 5;
+        byte weightBanana = 80;
+        int weightBananas = bananas * weightBanana;
         short milk = 200;
-        short icecream = 2;
-        short eggs = 4;
-        int weightbananas = bananas * 80;
-        int weightmilk = milk/100 * 105;
-        int weighticecream = icecream * 100;
-        int weighteggs = eggs * 70;
-        float weightbreakfastg = weightbananas + weighteggs + weighticecream + weightmilk;
-        float weightbreakfastkg = weightbreakfastg / 1000;
-        System.out.println ("Weight bananas = " + weightbananas + "g");
-        System.out.println ("Weight milk = " + weightmilk +  "g");
-        System.out.println ("Weight icecream = " + weighticecream +  "g");
-        System.out.println ("Weight eggs = " + weighteggs +  "g");
-        System.out.println ("Breakfast weight in grams = " + weightbreakfastg +  "g");
+
+        int weightMilk = milk/100 * 105;
+        byte icecream = 2;
+        short icecreamPack = 100;
+        int weightIcecream = icecream * icecreamPack;
+        byte eggs = 4;
+        int eggWeight = 70;
+        int weightEggs = eggs * eggWeight;
+        float weightBreakFastG = weightBananas + weightEggs + weightIcecream + weightMilk;
+        float weightbreakfastkg = weightBreakFastG / 1000;
+        System.out.println ("Bananas weight = " + weightBananas + "g");
+        System.out.println ("Milk weight = " + weightMilk +  "g");
+        System.out.println ("Icecream weight = " + weightIcecream +  "g");
+        System.out.println ("Eggs weight = " + weightEggs +  "g");
+        System.out.println ("Breakfast weight in grams = " + weightBreakFastG +  "g");
         System.out.println ("Breakfast weight in kilograms = " + weightbreakfastkg +  "kg");
 
+
+
+
         // Homework 4
+        byte excessWeight = 7;
+        short firstDiet = 250;
+        short secondDiet = 500;
+        int firstDietDays = excessWeight*1000/firstDiet;
+        int secondDietDays = excessWeight*1000/secondDiet;
+        int averageDays = (firstDietDays+secondDietDays)/2;
+        System.out.println("250 grams per days before the result = " + firstDietDays + " days");
+        System.out.println("500 grams per days before the result = " + secondDietDays + " days");
+        System.out.println("On average days before the result = " + averageDays + " days");
 
-
+        // Homework 5
 
 
 
