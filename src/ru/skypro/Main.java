@@ -25,27 +25,68 @@ public class Main {
 
         // Homework 3
         byte bananas = 5;
+        byte weightBanana = 80;
+        int weightBananas = bananas * weightBanana;
         short milk = 200;
-        short icecream = 2;
-        short eggs = 4;
-        int weightbananas = bananas * 80;
-        int weightmilk = milk/100 * 105;
-        int weighticecream = icecream * 100;
-        int weighteggs = eggs * 70;
-        float weightbreakfastg = weightbananas + weighteggs + weighticecream + weightmilk;
-        float weightbreakfastkg = weightbreakfastg / 1000;
-        System.out.println ("Weight bananas = " + weightbananas + "g");
-        System.out.println ("Weight milk = " + weightmilk +  "g");
-        System.out.println ("Weight icecream = " + weighticecream +  "g");
-        System.out.println ("Weight eggs = " + weighteggs +  "g");
-        System.out.println ("Breakfast weight in grams = " + weightbreakfastg +  "g");
+        float grPerMl = 100 / 105f;
+        float weightMilk = milk / grPerMl;
+        byte icecream = 2;
+        short icecreamPack = 100;
+        int weightIcecream = icecream * icecreamPack;
+        byte eggs = 4;
+        int eggWeight = 70;
+        int weightEggs = eggs * eggWeight;
+        int grPerKg = 1000;
+        float weightBreakFastG = weightBananas + weightEggs + weightIcecream + weightMilk;
+        float weightbreakfastkg = weightBreakFastG / grPerKg;
+        System.out.println ("Bananas weight = " + weightBananas + "g");
+        System.out.println ("Milk weight = " + weightMilk +  "g");
+        System.out.println ("Icecream weight = " + weightIcecream +  "g");
+        System.out.println ("Eggs weight = " + weightEggs +  "g");
+        System.out.println ("Breakfast weight in grams = " + weightBreakFastG +  "g");
         System.out.println ("Breakfast weight in kilograms = " + weightbreakfastkg +  "kg");
 
+
+
+
         // Homework 4
+        byte excessWeight = 7;
+        int grToKg = 1000;
+        short firstDiet = 250;
+        short secondDiet = 500;
+        int firstDietDays = excessWeight * grToKg / firstDiet;
+        int secondDietDays = excessWeight * grToKg / secondDiet;
+        int averageDays = (firstDietDays+secondDietDays) / 2;
+        System.out.println("250 grams per days before the result = " + firstDietDays + " days");
+        System.out.println("500 grams per days before the result = " + secondDietDays + " days");
+        System.out.println("On average days before the result = " + averageDays + " days");
 
+        // Homework 5
+        int Masha = 67760;
+        float upMashaMonth = Masha * 10 / 100f;
+        float paymentMasha = Masha + upMashaMonth;
+        byte year = 12;
+        float yearOldPaymentMasha = Masha * year;
+        float yearPaymentMasha = paymentMasha * year;
+        float upYearPaymentMasha = yearPaymentMasha - yearOldPaymentMasha;
 
+        int Denis = 83690;
+        float upDenisMonth = Denis * 10 / 100f;
+        float paymentDenis = Denis + upDenisMonth;
+        float yearOldPaymentDenis = Denis * year;
+        float yearPaymentDenis = paymentDenis * year;
+        float upYearPaymentDenis = yearPaymentDenis - yearOldPaymentDenis;
 
+        int Kristina = 76230;
+        float upKristinaMonth = Kristina * 10 / 100f;
+        float paymentKristina = Kristina + upKristinaMonth;
+        float yearOldPaymentKristina = Kristina * year;
+        float yearPaymentKristina = paymentKristina * year;
+        float upYearPaymentKristina = yearPaymentKristina - yearOldPaymentKristina;
 
+        System.out.println ("Payment for Masha = " + paymentMasha + " rubles per month. " + "Salary for the year increased by " + upYearPaymentMasha + " rubles" );
+        System.out.println ("Payment for Denis = " + paymentDenis + " rubles per month. " + "Salary for the year increased by " + upYearPaymentDenis + " rubles" );
+        System.out.println ("Payment for Kristina = " + paymentKristina + " rubles per month. " + "Salary for the year increased by " + upYearPaymentKristina + " rubles" );
 
     }
 }
